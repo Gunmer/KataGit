@@ -11,15 +11,15 @@ Es recomendable realizar un folk del repositorio.
 ###Merge
 En este ejercicio veremos las diferencias entre hacer un merge con fast forward y hacerlo sin él, tambien conoceremos el squash.
 
-	1. Para empezar ejecutamos el archivo merges.sh esto nos creará una rama padre otra rama hija y los commits necesarios.
+	1. Para empezar ejecutamos el archivo merge.sh esto nos creará una rama padre otra rama hija y los commits necesarios.
 	2. Hacemos push de las ramas y ya tenemos el todo preparado!!!.
-	3. Hacemos merge -ff de la rama hija en la rama padre, y vemos el resultado.
+	3. Hacemos merge --ff de la rama hija en la rama padre, y vemos el resultado.
 	4. Borramos la rama local y volvemos a descargarnos la de servidor ;) 
 	5. Hacemos merge --no-ff y vemos que pasa.
-	6. Repetimos el paso 4 y luego hacemos un merge -squash
+	6. Repetimos el paso 4 y luego hacemos un merge --squash
 
 ###Rebase
-En este ejecicio practicaremos el rebase y sus opciones --onto y --preserve-merge.
+En este ejecicio practicaremos el rebase y sus opciones --onto y --preserve-merges.
 
 	1. Para empezar ejecutamos el archivo rebase.sh, esto nos creará tres ramas (app, server, client) y los commits necesarios.
 	2. Hacemos push de las ramas y a practicar!!!.
