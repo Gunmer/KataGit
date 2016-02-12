@@ -1,42 +1,40 @@
 # KataGit
-Esta Kata esta preparada para aprender y practicar distintos comandos, cada ejecicio de la kata tendrá un o mas archivos ejecutables para preparar el ejercicio.
+This Kata is designed to learn and practice different commands, each exercise has one or more executable files which will set the environment for the exercise.
 
-Es recomendable realizar un folk del repositorio.
+It's recommended to fork this repository.
 
-##Lista de ejercicios
+##Exercises
 + Merge
 + Rebase
-+ Rebase interactivo
++ Interactive rebase
 
 ###Merge
-En este ejercicio veremos las diferencias entre hacer un merge con fast forward y hacerlo sin él, tambien conoceremos el squash.
+In this exercise you will see the differences between a merge with fast foward and a merge without it, you will also use the squash option.
 
-	1. Para empezar ejecutamos el archivo merge.sh esto nos creará una rama padre otra rama hija y los commits necesarios.
-	2. Hacemos push de las ramas y ya tenemos el todo preparado!!!.
-	3. Hacemos merge --ff de la rama hija en la rama padre, y vemos el resultado.
-	4. Borramos la rama local y volvemos a descargarnos la de servidor ;) 
-	5. Hacemos merge --no-ff y vemos que pasa.
-	6. Repetimos el paso 4 y luego hacemos un merge --squash
+	1. Execute merge.sh file, it will create a parent branch, a daughter branch and the needed commits.
+	2. Push the new branches. The environment is ready!
+	3. Do a merge --ff from the daugther branch into the parent branch, and look at the results.
+	4. Delete the local branches and pull the code from the server again ;)
+	5. Do a merge --no-ff and look at the result.
+	6. Repeat step 4 and make a merge --squash.
 
 ###Rebase
-En este ejecicio practicaremos el rebase y sus opciones --onto y --preserve-merges.
-
-	1. Para empezar ejecutamos el archivo rebase.sh, esto nos creará tres ramas (app, server, client) y los commits necesarios.
-	2. Hacemos push de las ramas y a practicar!!!.
-	3. Primero hacemos un rebase de la rama client sobre la rama server.
-	4. Borramos las ramas y las descargamos del servidor.
-	5. Ahora hacemos un rebase --onto de cliente sobre la rama app.
-	6. Repetimos el paso 4, hacemos un merge --no-ff de client en server y por último hacemos un rebase --preserve-merge de server sobre app.
-
-###Rebase interactivo
-
-	1. Para empezar ejecutamos el archivo rebaseI.sh, esto nos creará dos ramas (padre e hijo) y los commit necesarios.
-	2. Ya lo sabeis, hacemos push de las ramas y al lio!!!.
-	3. Hacemos un rebase -i de la rama hijo y eliminamos los commits que tienen en el comentario la palabra error.
-	4. Borramos las ramas y las descargamos del servidor.
-	5. Ahora tenemos que ordenar los commits de la rama hijo segun el número que aparece en el comentario.
-	6. Repetimos el paso 4 y ahora unimos los dos últimos commits de la rama hijo.
+In this exercise you will practice rebase command and it's options --onto and --preserve-merge.
+	1. Execute rebase.sh file, it will create three branches (app, server, client) and the needed commits.
+	2. Push the new branches and let's go practice!!!
+	3. Do a rebase from the client branch into the server branch.
+	4. Delete the local branches and pull the code from the server again ;)
+	5. Now do a rebase --onto from the client branch into the app branch.
+	6. Repeat step 4, do a merge --no-ff from client branch into server branch and finally do a rebase --preserve-merge from server branch to app branch.
+	
+###Interactive rebase
+	1. Execute rebaseI.sh file, it will create two branches (parent and daughter) and the needed commits.
+	2. You should know now... push the new branches and let's start!
+	3. Do a rebase -i of the daughter branch and remove every comment with the word 'error'.
+	4. Delete the local branches and pull the code from the server again.
+	5. Now you have to sort the commits of the daughter branch depending on the number in the comment.
+	6. Repeat the step 4 and combine last 2 commits of the daguther branch.
+	
 
 ##TODO
-- Crear version para windows
-- Traducir al ingles
+- Windows version
